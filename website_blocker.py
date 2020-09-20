@@ -27,7 +27,7 @@ while True:
 					file.write("\n" + redirect + "    " + website + "\n" )
 					
 	else:
-		with open(host_sample, "r+") as file:
+		with open(w_hosts_path or maclin_hosts_path, "r+") as file:
 			content = file.readlines()
 			file.seek(0)
 			for line in content:
